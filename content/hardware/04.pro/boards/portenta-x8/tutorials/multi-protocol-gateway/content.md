@@ -48,7 +48,7 @@ This means that the gateway can receive the data transmitted in certain protocol
 The Portenta X8 paired with the Portenta Max Carrier has the potential to create synergy, and you will have following connectivity tools at your disposal:
 
 - WiFi (MQTT Protocol)
-- Bluetooth Low Energy
+- Bluetooth® Low Energy
 - LoRaWAN® (The Things Network)
 - NB-IoT & Cat-M1
 
@@ -75,7 +75,7 @@ Hence the multi-protocol architecture will process and manage the data traffic w
 
 ### Linux Layer
 
-It is important to understand that **all networking processes are made within the Linux layer**. All network processes that are WiFi, Bluetooth low energy, LoRa®, NB-IoT, and Cat-M1. We will focus on using WiFi with MQTT protocol, and LoRa® connectivities to establish a multiple protocol gateway.
+It is important to understand that **all networking processes are made within the Linux layer**. All network processes that are WiFi, Bluetooth® Low Energy, LoRa®, NB-IoT, and Cat-M1. We will focus on using WiFi with MQTT protocol, and LoRa® connectivities to establish a multiple protocol gateway.
 
 The Portenta X8 provides WiFi connectivity and the Portenta Max Carrier provides a LoRaWAN® module that can help us communicate with The Things Network. We will use the MQTT protocol to receive the sensor data transmitted by an end device. 
 
