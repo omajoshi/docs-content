@@ -23,3 +23,5 @@ debug: false
 
 # Defines rules for what links not to check. Usually relative links should not be checked.
 brokenLinkExcludePatterns: [^./, ^../, ^#, ^chrome://, localhost , ^assets/, ^images/]
+
+assetsFolderName: "assets"

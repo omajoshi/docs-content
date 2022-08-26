@@ -4,7 +4,7 @@ import { ArticleManager } from 'content-lint';
 import { validateDuplicatedOpeningHeading, validateHeadingsNesting, validateMaxLength, validateNumberedHeadings, validateOpeningHeadingLevel, validateSpacing, validateTitleCase } from 'content-lint'
 import { validateMetaData } from 'content-lint';
 import { validateRules } from 'content-lint';
-import { validateImageDescriptions, validateImagePaths, validateReferencedAssets, validateSVGFiles } from 'content-lint';
+import { validateImageDescriptions, validateImagePaths, validateReferencedAssets, validateSVGFiles, validateAssetsFolderName } from 'content-lint';
 import { validateSyntaxSpecifiers } from 'content-lint';
 import { validateNestedLists } from 'content-lint';
 import { validateBrokenLinks } from 'content-lint';
@@ -50,6 +50,8 @@ validator.addValidation(tutorials, validateOpeningHeadingLevel, configManager.ge
 
 // Verify that SVG images don't contain embedded images
 validator.addValidation(allArticles, validateSVGFiles);
+
+validator.addValidation(allArticles, validateAssetsFolderName, configManager.getConfig("generic").assetsFolderName);
 
 // Verify that there are no broken links
 if(configManager.options.checkBrokenLinks){
